@@ -15,8 +15,14 @@ class Table_question extends CI_Model {
 			$key.="or question_title like '%".$row."%' ";
 			$key.="or question_content like '%".$row."%' ";
 		}
-		$query = $this->db->query('SELECT DISTINCT qa_question.id, question_title,question_content FROM qa_question LEFT JOIN (qa_answer) ON qa_question.id = qa_answer.question_id where '.$key.'');
-		return $query->result_array();
+		$query = $this->db->query('SELECT DISTINCT qa_question.id, question_title,question_content,question_browse FROM qa_question LEFT JOIN (qa_answer) ON qa_question.id = qa_answer.question_id where '.$key.'');
+		//return $query->result_array();
+		$result = $query->result_array();
+		//foreach($result as $row) {
+		//	$query1 = $this->db->query('SELECT count(id) FROM qa_answer WHERE question_id = '.$row['id'].'');
+		//	$result['sum'] = $query1->result_array();
+		//}
+		return $result;
 	}
 	
 	public function show_question_content($id) {
@@ -27,6 +33,15 @@ class Table_question extends CI_Model {
 	public function get_id($question_title) {
 		$query = $this->db->query('SELECT id FROM qa_question where question_title = \''.$question_title.'\' LIMIT 1');
 		return $query->row_array();
+	}
+	public function update_answer_times($question_id) {
+		$query = $this->db->query('SELECT question_browse FROM qa_question where id = \''.$question_id.'\' LIMIT 1');
+		$times = $query->row_array();
+		$times['question_browse']++;
+		$this->db->where("id",$question_id);
+		$this->db->update("qa_question",$times);
+		return true;
+		
 	}
 	public function list_question($id) {
 		$query = $this->db->query('SELECT id, question_title, add_time FROM qa_question where user_id = '.$id.' ORDER BY id DESC');

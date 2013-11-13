@@ -28,21 +28,21 @@
 				<div id="searchLayer" style="display:none;margin-left:55px;width:415px;z-index:1;min-height:50px;height:auto;background:#f1f3f5;"></div>
 			</form>
 		</div>
-		<div class="span20"></div>
+		<div class="span60"></div>
 		<div style="width:600px;height;auto;margin:0 auto;text-align:justfiy;">
-
+		<div class="span20"></div>
 		<?php
 			if($sum != 0) {
 			foreach($list as $row) {
 			?>
-				<p style="padding:5px;border-bottom:1px dashed #4d98e5;">
+				<div style="padding:5px;border-bottom:1px dashed #4d98e5;">
+				<div class="span20"></div>
 				<a style="font-size:20px;" href="<?php echo base_url();?>questionController/show_question/?id=<?php echo $row['id'];?>"><?php echo $row['question_title'];?></a>
-				&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;<b style="font-size:10px;"><?php echo $row['question_browse'];?> Answers</b>
 				<br />
 				<br />
-				<?php echo $row['question_content'];?>
-				<br />
-				</p>
+				<?php echo substr(strip_tags($row['question_content']),0,100)."......";?>
+				</div>
 			<?php
 			}
 			}

@@ -14,6 +14,8 @@ class Table_answer extends CI_Model {
 		$data['category_id'] = $category_id;
 		$data['is_top'] = 0;
 		$this->db->insert("qa_answer", $data);
+		$this->load->model('table_question');
+		$this->table_question->update_answer_times($question_id);
 		return true;
 		}
 	}
