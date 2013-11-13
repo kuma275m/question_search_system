@@ -3,7 +3,8 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link href="<?php echo base_url();?>statics/css/style.css" rel="stylesheet" media="screen" type="text/css" />
-	<script type="text/javascript" src="<?php echo base_url();?>extension/ckeditor/ckeditor.js"></script>
+		<script charset="utf-8" src="<?php echo base_url()?>extension/kindeditor/kindeditor-min.js"></script>
+		<script charset="utf-8" src="<?php echo base_url()?>extension/kindeditor/lang/en.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
 	<title><?php echo $question_title;?></title>
 </head>
@@ -171,21 +172,20 @@ function selectList(){
            } 
            return true;
        }
-   /*CKEDITOR.replace( 'answer', {
-
-   filebrowserBrowseUrl : 'ckfinder/ckfinder.html',
-
-   filebrowserImageBrowseUrl : 'ckfinder/ckfinder.html?Type=Images',
-
-   filebrowserFlashBrowseUrl : 'ckfinder/ckfinder.html?Type=Flash',
-
-   filebrowserUploadUrl : 'ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
-
-   filebrowserImageUploadUrl : 'ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
-
-   filebrowserFlashUploadUrl : 'ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
-
-   });*/
+			var editor;
+			KindEditor.ready(function(K) {
+				editor = K.create('textarea[name="answer"]', {
+					cssPath : '<?php echo base_url();?>extension/kindeditor/themes/simple/simple.css',
+					filterMode : true,
+					resizeType : 2,
+					allowPreviewEmoticons : false,
+					allowImageUpload : false,
+					items : [
+						'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+						'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+						'insertunorderedlist', '|', 'emoticons', 'image', 'link']
+				});
+			});
 
   
     </script> 
