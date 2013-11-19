@@ -70,7 +70,9 @@ class Main extends CI_Controller {
 			redirect('main');
 		}
 		else {
-			$this->load->view('search_engine');
+			//$this->load->view('search_engine');
+			$data['message'] = "We are sorry, the username or password is incorrect.";
+			$this->load->view('message', $data);
 		}
 	}
 	
