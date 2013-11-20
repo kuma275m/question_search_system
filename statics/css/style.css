@@ -131,6 +131,29 @@ a, a:hover, a:visited {
 #container input[type="submit"]:hover {
 	border: 1px solid #fff;
 }
+#container input[type="button"] {
+	min-width:60px;
+	width:auto;
+	height:27px;
+	color: #FFF;
+    border: 1px solid #999;
+	text-shadow: 0px 1px 1px #666;
+	text-decoration: none;
+    -moz-box-shadow: 0 1px 3px #111;
+    -webkit-box-shadow: 0 1px 3px #111;
+    box-shadow: 0 1px 3px #111;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+	background: #4d98e5;
+    background: -moz-linear-gradient(top, #4d98e5 40%, #6faae7 60%, #5fa0e2 90%, #4d98e5 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#4d98e5), to(#4d98e5), color-stop(0.4, #6faae7), color-stop(0.6, #5fa0e2), color-stop(0.9, #589de3));
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d98e5', endColorstr='#4d98e5', GradientType=0 );
+    cursor: pointer;
+	}
+#container input[type="button"]:hover {
+	border: 1px solid #fff;
+}
 #container textarea {
 	width: 600px;
 	height:200px;
@@ -173,6 +196,24 @@ a, a:hover, a:visited {
 #container .navigation_tag:hover {
 	border:1px solid #000000;
 	border-bottom:0px;
+}
+#wall {
+	width:600px;
+	height:250px;
+	background:#ffffff;
+	display:none;
+	margin: 0 auto;
+	position:absolute;
+	border: 1px solid #4d98e5;
+	-moz-box-shadow: 0 1px 15px #111;
+    -webkit-box-shadow: 0 1px 15px #111;
+    box-shadow: 0 1px 15px #111;
+	-webkit-border-top-left-radius: 6px;
+	-moz-border-top-left-radius: 6px;
+	border-top-left-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+	-moz-border-top-right-radius: 6px;
+	border-top-right-radius: 6px;
 }
 .span10 {
 	height:10px !important;
