@@ -40,6 +40,17 @@ class Table_user extends CI_Model {
 		}
 	}
 	
+	public function change_password($new_password, $user_id) {
+		$password = $new_password;
+		if (isset($password) && $password != "")
+		{
+			$data['password'] = md5($password);
+			$this->db->where("id",$user_id);
+			$this->db->update("qa_user",$data);
+			return true;
+		}
+	}
+	
 	public function update_user($status, $user_id) {
 		if($status == "update_ask_times") {
 			$query = $this->db->query('SELECT ask_times FROM qa_user WHERE id = '.$user_id.' LIMIT 1');

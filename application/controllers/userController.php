@@ -93,6 +93,22 @@ class UserController extends CI_Controller {
 		}
 	}
 	
+	public function change_password() {
+		$new_password = $this->input->post('new_password');
+		if(isset($new_password)&& $new_password != "")
+		{
+			$username = $this->session->userdata('username');
+			$this->load->model('table_user');
+			$user_id = $this->table_user->get_user_id($username);
+			$this->load->model('table_user');
+			if($this->table_user->change_password($new_password, $user_id))
+			{
+				$data['message'] = "Your password has been changed.";
+				$this->load->view('message', $data);
+			}
+		}
+	}
+	
 }
 
 /* End of file welcome.php */
