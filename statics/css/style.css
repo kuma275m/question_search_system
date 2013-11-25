@@ -84,6 +84,7 @@ a, a:hover, a:visited {
 	min-height:500px;
 	height:auto;
 	margin:0 auto;
+	z-index:998;
 }
 #container h1 {
 	font-size:48px;
@@ -155,8 +156,8 @@ a, a:hover, a:visited {
 	border: 1px solid #fff;
 }
 #container textarea {
-	width: 600px;
-	height:200px;
+	width: 500px;
+	height:100px;
 	border: 1px solid #fff;
 	box-shadow:inset 0 0px 5px;
 	border-radius: 10px;
@@ -196,6 +197,21 @@ a, a:hover, a:visited {
 #container .navigation_tag:hover {
 	border:1px solid #000000;
 	border-bottom:0px;
+}
+#footer {
+	width:100%;
+	height:auto;
+	/*position:fixed;
+	bottom:0px;*/
+	margin:0 auto; 
+	text-align:center; 
+	border-top:1px solid #4d98e5;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:14px;
+	color:#4d98e5;
+	text-shadow: 0px 0px 1px #000;	
+	z-index:900;
 }
 #wall {
 	width:600px;

@@ -14,9 +14,12 @@
 		<h1>TECHNIQUE QUESTION SEARCH</h1>
 		<div class="span20"></div>
 		<?php
+			if(isset($message)) {
 			echo $message;
+			}
 		?>
 		</div>
 	</div>
+<?php $this->load->view('footer');?>
 </body>
 </html>

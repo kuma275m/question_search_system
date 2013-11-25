@@ -2,21 +2,6 @@
 
 class QuestionController extends CI_Controller {
 
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -  
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in 
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see http://codeigniter.com/user_guide/general/urls.html
-	 */
 	public function index()
 	{
 	
@@ -24,7 +9,7 @@ class QuestionController extends CI_Controller {
 	
 	public function show_question()
 	{
-		$question_id = $_GET['id'];
+		$question_id = $this->uri->segment(3);
 		$this->load->model('table_question');
 		$result['show_content'] = $this->table_question->show_question_content($question_id);
 		foreach($result['show_content'] as $row) {
@@ -78,6 +63,3 @@ class QuestionController extends CI_Controller {
 	}
 	
 }
-
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */

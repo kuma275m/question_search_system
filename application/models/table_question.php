@@ -6,7 +6,7 @@ class Table_question extends CI_Model {
 		$key = "";
 		$keyword_list = explode(' ', $str);
 		if($category!="") {
-			$key.="category_id = ".$category." and ";
+			$key.="qa_question.category_id = ".$category." and ";
 		}
 		$key.="question_title like '%".$keyword_list[0]."%' ";
 		$key.="or question_content like '%".$keyword_list[0]."%' ";

@@ -44,7 +44,7 @@
 			<br />
 		</div>
 	</div>
-   
+   <?php $this->load->view('footer');?> 
    <script language="javascript">
 
 	function check(form) {
@@ -53,11 +53,11 @@
                form.question_title.focus();
                return false;
            } 
-		   	if($.trim(form.question_content.value)==""){
+		   	/*if($.trim(form.question_content.value)==""){
                alert("Please Input Question Content.");
                form.question_content.focus();
                return false;
-           }
+           }*/
            return true;
 	}
     function activeTag(tag,id) {

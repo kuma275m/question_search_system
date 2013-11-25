@@ -50,6 +50,7 @@
 			</div>
 		<div class="span60"></div>
 	</div>
+    <?php $this->load->view('footer');?> 
 	<script>
 		function show_change_password() {
 			if($("#wall").is(":hidden"))

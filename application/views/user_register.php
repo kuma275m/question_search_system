@@ -32,6 +32,7 @@
 		<div class="span60"></div>
 		</div>
 	</div>
+    <?php $this->load->view('footer');?> 
 	<script language="javascript">
 			var xmlhttp;
 			if (window.XMLHttpRequest)

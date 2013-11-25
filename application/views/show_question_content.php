@@ -34,7 +34,7 @@
 		<div style="width:820px;height:40px;text-align:left;margin:0 auto;" class="divheader">
 			<div style="margin:10px;text-weight:bold;"><b><?php echo $question_title;?></b>    <font style="font-size:10px;"><?php echo $add_time;?></font></div>
 		</div>
-		<div style="width:800px; height:auto;padding:10px;text-align:left;margin:0 auto;border:1px solid #4d98e5;">
+		<div style="width:800px; height:auto;background:#fff;padding:10px;text-align:left;margin:0 auto;border:1px solid #4d98e5;">
 			<?php
 
 			echo $question_content;
@@ -42,7 +42,7 @@
 			?>
 		</div>
 		<br />
-		<div style="width:800px; height:auto;padding:10px;text-align:left;margin:0 auto;border:1px solid #4d98e5;">
+		
 			<?php
 
 			if(isset($message)){echo "<b>".$message."</b>";}
@@ -50,14 +50,15 @@
 				$num = 1;
 				foreach($show_answer as $answer)
 				{
+					echo "<div style='width:800px; height:auto;background:#fff;padding:10px;text-align:left;margin:0 auto;border:1px solid #4d98e5;'>";
 					echo "<b>#".$num."&nbsp;&nbsp;&nbsp;".$answer['username']."(".$answer['add_time']."):</b><br />";
 					echo "<p style='border-bottom:1px dashed #4d98e5;'>".$answer['answer_content']."</p><br />";
 					$num++;
+					echo "</div>";
 				}
 			}
 
 			?>
-		</div>
 		<br />
 
 		<?php if ($this->session->userdata('is_logged_in'))
@@ -65,7 +66,7 @@
 			<div style="width:820px;height:40px;text-align:left;margin:0 auto;" class="divheader">
 			<div style="margin:10px;text-weight:bold;"><b>Your Answer:</b></div>
 			</div>
-			<div style="width:800px; height:auto;padding:10px;text-align:left;margin:0 auto;border:1px solid #4d98e5;">
+			<div style="width:800px;background:#fff;height:auto;padding:10px;text-align:center;margin:0 auto;border:1px solid #4d98e5;">
 			<form action="<?php echo base_url()."answerController/reply_question" ?>" method="post" accept-charset="utf-8" id="search" autocomplete="off" onsubmit="return check(this)">
 				<textarea name="answer" id="answer" style="padding:10px;" /></textarea>
 				<input type="hidden" name="question_id" value="<?php echo $question_id;?>" id="question_id" />
@@ -80,35 +81,36 @@
 		?>
 
 	</div>
+    <?php $this->load->view('footer');?> 
 	<script language="javascript">
 
-var index = 0;    //¹Ø¼ü×ÖÁÐ±íÏîË÷Òý
-var count = 0;    //¹Ø¼ü×ÖÁÐ±í×ÜÊý
-function showKeywordsList(){    //ÏÔÊ¾¹Ø¼ü×ÖÏÂÀ­ÁÐ±í
-    var keycode = event.keyCode;        //ÓÃ»§°´¼üµÄASCIIÂë
-    if(keycode != 40 && keycode != 38){      //Èç¹û²»ÊÇÏòÉÏºÍÏòÏÂ·½Ïò¼ü
-        index = 0;                        //¹Ø¼ü×ÖË÷Òý¹é0
+var index = 0;    //ï¿½Ø¼ï¿½ï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+var count = 0;    //ï¿½Ø¼ï¿½ï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½ï¿½ï¿½
+function showKeywordsList(){    //ï¿½ï¿½Ê¾ï¿½Ø¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½
+    var keycode = event.keyCode;        //ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ASCIIï¿½ï¿½
+    if(keycode != 40 && keycode != 38){      //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ïºï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½
+        index = 0;                        //ï¿½Ø¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0
         if($("#keywords").val() == "" || $.trim($("#keywords").val()) == ""){
-            $("#searchLayer").css("display", "none");   //Èç¹ûÓÃ»§ÊäÈë¿Õ×Ö·û»ò¿Õ¸ñÔòÒþ²ØÏÂÀ­ÁÐ±í
+            $("#searchLayer").css("display", "none");   //ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½Õ¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½
         }else{
             //$("#searchLayer").css("display", "block");
-			setTimeout("reSearch()", 150);    //·ñÔòÃ¿¸ô150ºÁÃëµ÷ÓÃÒ»´ÎreSearch()·½·¨
+			setTimeout("reSearch()", 150);    //ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½ï¿½150ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½reSearch()ï¿½ï¿½ï¿½ï¿½
         } 
     }
 }
-
+/*
 function reSearch(){
 	var keyword = $("#keywords").attr("value");
 	//alert(keyword);
-    if($("#keywords").val() != ""){                       //Èç¹ûÓÃ»§Â¼ÈëµÄ¹Ø¼ü×Ö²»Îª¿Õ
-        $.get("<?php echo base_url();?>main/list_keywords?keyword="+keyword, null, function(data){
-                                                          //Í¨¹ýjQueryÏò·þÎñÆ÷·¢ËÍGETÇëÇó
-            if($.trim(data) == ""){                       //Èç¹û·µ»ØÊý¾ÝÎª¿Õ£¬ÔòÒþ²ØÏÂÀ­ÁÐ±í²ã
+    if($("#keywords").val() != ""){                       //ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Â¼ï¿½ï¿½Ä¹Ø¼ï¿½ï¿½Ö²ï¿½Îªï¿½ï¿½
+        $.get("<?php //echo base_url();?>main/list_keywords?keyword="+keyword, null, function(data){
+                                                          //Í¨ï¿½ï¿½jQueryï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½GETï¿½ï¿½ï¿½ï¿½
+            if($.trim(data) == ""){                       //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½Õ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½ï¿½
                 $("#searchLayer").css("display", "none");
             }else{
-                $("#searchLayer").html(data);             //Èç¹û·µ»ØÊý¾Ý²»Îª¿ÕÔòÏÔÊ¾ÏÂÀ­ÁÐ±í
+                $("#searchLayer").html(data);             //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý²ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½
                 $("#searchLayer").css("display", "block");
-            	count = parseInt($("#totalList").val());   //»ñÈ¡ÁÐ±íÖÐ¹Ø¼ü×Ö¸öÊý
+            	count = parseInt($("#totalList").val());   //ï¿½ï¿½È¡ï¿½Ð±ï¿½ï¿½Ð¹Ø¼ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½
             }
         });
     }
@@ -116,31 +118,31 @@ function reSearch(){
         
         
 function selectList(){
-    var keycode = event.keyCode;                   //»ñÈ¡ÓÃ»§Â¼Èë×Ö·ûµÄASCII
-    if(keycode == 40){                             //Èç¹ûÓÃ»§°´ÏòÏÂ·½Ïò¼ü
-    	$("#listItem_"+index).css("background-color", "#158CD0");  //¸ü¸Äµ±Ç°ËùÑ¡ÏîµÄ±³¾°É«
-    	$("#listItem_"+index).css("color", "#FFFFFF");             //¸ü¸Äµ±Ç°ËùÑ¡ÏîµÄÇ°¾°É«
-    	$("#keywords").val($.trim($("#listItem_li_"+index).html())); //½«µ±Ç°ËùÑ¡ÏîÏÔÊ¾ÔÚÎÄ±¾¿òÖÐ
+    var keycode = event.keyCode;                   //ï¿½ï¿½È¡ï¿½Ã»ï¿½Â¼ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ASCII
+    if(keycode == 40){                             //ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½
+    	$("#listItem_"+index).css("background-color", "#158CD0");  //ï¿½ï¿½ï¿½Äµï¿½Ç°ï¿½ï¿½Ñ¡ï¿½ï¿½Ä±ï¿½ï¿½ï¿½É«
+    	$("#listItem_"+index).css("color", "#FFFFFF");             //ï¿½ï¿½ï¿½Äµï¿½Ç°ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½Ç°ï¿½ï¿½É«
+    	$("#keywords").val($.trim($("#listItem_li_"+index).html())); //ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½
     	if(index > 0){                   
-    	    $("#listItem_"+parseInt(index-1)).css("background-color", "#FFFFFF");   //¸ü¸Äµ±Ç°ÏîÇ°Ò»ÏîµÄ±³¾°É«
-    	    $("#listItem_"+parseInt(index-1)).css("color", "#333333");            //¸ü¸Äµ±Ç°ÏîÇ°Ò»ÏîµÄÇ°¾°É«
+    	    $("#listItem_"+parseInt(index-1)).css("background-color", "#FFFFFF");   //ï¿½ï¿½ï¿½Äµï¿½Ç°ï¿½ï¿½Ç°Ò»ï¿½ï¿½Ä±ï¿½ï¿½ï¿½É«
+    	    $("#listItem_"+parseInt(index-1)).css("color", "#333333");            //ï¿½ï¿½ï¿½Äµï¿½Ç°ï¿½ï¿½Ç°Ò»ï¿½ï¿½ï¿½Ç°ï¿½ï¿½É«
         }
-        if(index < count-1){            //Èç¹ûµ±Ç°Ë÷ÒýÐ¡ÓÚ×Ü¹Ø¼ü×ÖÊý¼õ1
-    	    index++;                  //Ë÷ÒýÊýÔö1
+        if(index < count-1){            //ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½Ü¹Ø¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1
+    	    index++;                  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1
         }
-    }else if(keycode == 38){   //Èç¹ûÓÃ»§°´ÏòÉÏ·½Ïò¼ü
-    	if(index > 0){             //Èç¹ûË÷Òý´óÓÚ0
-        	$("#listItem_"+parseInt(index-1)).css("background-color", "#158CD0");   //¸ü¸Äµ±Ç°ÏîÇ°Ò»Ïî±³¾°É«
-        	$("#listItem_"+parseInt(index-1)).css("color", "#FFFFFF");          //¸ü¸Äµ±Ç°ÏîÇ®Ò»ÏîÇ°¾°É«
-        	$("#keywords").val($.trim($("#listItem_li_"+parseInt(index-1)).html()));       //½«µ±Ç°ËùÑ¡ÏîÏÔÊ¾ÔÚÎÄ±¾¿òÖÐ 
+    }else if(keycode == 38){   //ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï·ï¿½ï¿½ï¿½ï¿½
+    	if(index > 0){             //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0
+        	$("#listItem_"+parseInt(index-1)).css("background-color", "#158CD0");   //ï¿½ï¿½ï¿½Äµï¿½Ç°ï¿½ï¿½Ç°Ò»ï¿½î±³ï¿½ï¿½É«
+        	$("#listItem_"+parseInt(index-1)).css("color", "#FFFFFF");          //ï¿½ï¿½ï¿½Äµï¿½Ç°ï¿½ï¿½Ç®Ò»ï¿½ï¿½Ç°ï¿½ï¿½É«
+        	$("#keywords").val($.trim($("#listItem_li_"+parseInt(index-1)).html()));       //ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½ 
     	}
-	    $("#listItem_"+index).css("background-color", "#FFFFFF");       //¸ü¸Ä µ±Ç°Ïî±³¾°É« 
-	    $("#listItem_"+index).css("color", "#333333");                   //¸ü¸Äµ±Ç°ÏîÇ°¾°É«
-        if(index > 1){                                                     //Èç¹ûË÷Òý´óÓÚ1
-    	    index--;                                                     //Ë÷Òý¼õ1
+	    $("#listItem_"+index).css("background-color", "#FFFFFF");       //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç°ï¿½î±³ï¿½ï¿½É« 
+	    $("#listItem_"+index).css("color", "#333333");                   //ï¿½ï¿½ï¿½Äµï¿½Ç°ï¿½ï¿½Ç°ï¿½ï¿½É«
+        if(index > 1){                                                     //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1
+    	    index--;                                                     //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1
         }
     }
-}
+}*/
     function activeTag(tag,id) {
 		<?php foreach ($category as $row) {
 		?>
@@ -172,7 +174,7 @@ function selectList(){
            } 
            return true;
        }
-			var editor;
+		/*	var editor;
 			KindEditor.ready(function(K) {
 				editor = K.create('textarea[name="answer"]', {
 					cssPath : '<?php echo base_url();?>extension/kindeditor/themes/simple/simple.css',
@@ -185,7 +187,7 @@ function selectList(){
 						'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
 						'insertunorderedlist', '|', 'emoticons', 'image', 'link']
 				});
-			});
+			});*/
 
   
     </script> 
