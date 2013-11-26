@@ -1,0 +1,570 @@
+<NotepadPlus>
+    <Project name="search">
+        <Folder name="application">
+            <Folder name="cache">
+                <File name="application\cache\.htaccess" />
+                <File name="application\cache\index.html" />
+            </Folder>
+            <Folder name="config">
+                <File name="application\config\autoload.php" />
+                <File name="application\config\config.php" />
+                <File name="application\config\constants.php" />
+                <File name="application\config\database.php" />
+                <File name="application\config\doctypes.php" />
+                <File name="application\config\foreign_chars.php" />
+                <File name="application\config\hooks.php" />
+                <File name="application\config\index.html" />
+                <File name="application\config\migration.php" />
+                <File name="application\config\mimes.php" />
+                <File name="application\config\profiler.php" />
+                <File name="application\config\routes.php" />
+                <File name="application\config\smileys.php" />
+                <File name="application\config\user_agents.php" />
+            </Folder>
+            <Folder name="controllers">
+                <File name="application\controllers\answerController.php" />
+                <File name="application\controllers\index.html" />
+                <File name="application\controllers\main.php" />
+                <File name="application\controllers\questionController.php" />
+                <File name="application\controllers\userController.php" />
+            </Folder>
+            <Folder name="core">
+                <File name="application\core\index.html" />
+            </Folder>
+            <Folder name="errors">
+                <File name="application\errors\error_404.php" />
+                <File name="application\errors\error_db.php" />
+                <File name="application\errors\error_general.php" />
+                <File name="application\errors\error_php.php" />
+                <File name="application\errors\index.html" />
+            </Folder>
+            <Folder name="helpers">
+                <File name="application\helpers\index.html" />
+            </Folder>
+            <Folder name="hooks">
+                <File name="application\hooks\index.html" />
+            </Folder>
+            <Folder name="language">
+                <Folder name="english">
+                    <File name="application\language\english\index.html" />
+                </Folder>
+            </Folder>
+            <Folder name="libraries">
+                <File name="application\libraries\index.html" />
+            </Folder>
+            <Folder name="logs">
+                <File name="application\logs\index.html" />
+            </Folder>
+            <Folder name="models">
+                <File name="application\models\email.php" />
+                <File name="application\models\index.html" />
+                <File name="application\models\table_answer.php" />
+                <File name="application\models\table_category.php" />
+                <File name="application\models\table_keyword.php" />
+                <File name="application\models\table_question.php" />
+                <File name="application\models\table_user.php" />
+            </Folder>
+            <Folder name="third_party">
+                <File name="application\third_party\index.html" />
+            </Folder>
+            <Folder name="views">
+                <File name="application\views\ask_question.php" />
+                <File name="application\views\header.php" />
+                <File name="application\views\index.html" />
+                <File name="application\views\message.php" />
+                <File name="application\views\search_engine.php" />
+                <File name="application\views\search_result.php" />
+                <File name="application\views\show_question_content.php" />
+                <File name="application\views\user_profile.php" />
+                <File name="application\views\user_register.php" />
+            </Folder>
+            <File name="application\.htaccess" />
+            <File name="application\index.html" />
+        </Folder>
+        <Folder name="extension">
+            <Folder name="kindeditor">
+                <Folder name="attached" />
+                <Folder name="lang">
+                    <File name="extension\kindeditor\lang\ar.js" />
+                    <File name="extension\kindeditor\lang\en.js" />
+                    <File name="extension\kindeditor\lang\ko.js" />
+                    <File name="extension\kindeditor\lang\zh_CN.js" />
+                    <File name="extension\kindeditor\lang\zh_TW.js" />
+                </Folder>
+                <Folder name="php">
+                    <File name="extension\kindeditor\php\demo.php" />
+                    <File name="extension\kindeditor\php\file_manager_json.php" />
+                    <File name="extension\kindeditor\php\JSON.php" />
+                    <File name="extension\kindeditor\php\upload_json.php" />
+                </Folder>
+                <Folder name="plugins">
+                    <Folder name="anchor">
+                        <File name="extension\kindeditor\plugins\anchor\anchor.js" />
+                    </Folder>
+                    <Folder name="autoheight">
+                        <File name="extension\kindeditor\plugins\autoheight\autoheight.js" />
+                    </Folder>
+                    <Folder name="baidumap">
+                        <File name="extension\kindeditor\plugins\baidumap\baidumap.js" />
+                        <File name="extension\kindeditor\plugins\baidumap\index.html" />
+                        <File name="extension\kindeditor\plugins\baidumap\map.html" />
+                    </Folder>
+                    <Folder name="clearhtml">
+                        <File name="extension\kindeditor\plugins\clearhtml\clearhtml.js" />
+                    </Folder>
+                    <Folder name="code">
+                        <File name="extension\kindeditor\plugins\code\code.js" />
+                        <File name="extension\kindeditor\plugins\code\prettify.css" />
+                        <File name="extension\kindeditor\plugins\code\prettify.js" />
+                    </Folder>
+                    <Folder name="emoticons">
+                        <Folder name="images">
+                            <File name="extension\kindeditor\plugins\emoticons\images\0.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\1.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\10.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\100.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\101.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\102.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\103.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\104.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\105.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\106.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\107.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\108.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\109.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\11.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\110.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\111.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\112.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\113.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\114.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\115.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\116.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\117.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\118.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\119.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\12.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\120.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\121.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\122.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\123.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\124.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\125.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\126.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\127.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\128.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\129.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\13.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\130.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\131.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\132.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\133.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\134.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\14.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\15.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\16.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\17.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\18.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\19.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\2.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\20.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\21.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\22.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\23.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\24.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\25.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\26.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\27.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\28.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\29.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\3.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\30.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\31.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\32.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\33.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\34.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\35.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\36.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\37.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\38.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\39.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\4.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\40.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\41.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\42.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\43.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\44.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\45.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\46.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\47.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\48.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\49.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\5.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\50.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\51.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\52.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\53.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\54.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\55.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\56.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\57.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\58.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\59.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\6.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\60.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\61.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\62.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\63.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\64.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\65.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\66.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\67.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\68.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\69.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\7.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\70.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\71.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\72.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\73.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\74.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\75.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\76.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\77.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\78.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\79.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\8.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\80.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\81.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\82.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\83.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\84.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\85.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\86.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\87.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\88.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\89.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\9.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\90.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\91.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\92.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\93.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\94.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\95.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\96.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\97.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\98.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\99.gif" />
+                            <File name="extension\kindeditor\plugins\emoticons\images\static.gif" />
+                        </Folder>
+                        <File name="extension\kindeditor\plugins\emoticons\emoticons.js" />
+                    </Folder>
+                    <Folder name="filemanager">
+                        <Folder name="images">
+                            <File name="extension\kindeditor\plugins\filemanager\images\file-16.gif" />
+                            <File name="extension\kindeditor\plugins\filemanager\images\file-64.gif" />
+                            <File name="extension\kindeditor\plugins\filemanager\images\folder-16.gif" />
+                            <File name="extension\kindeditor\plugins\filemanager\images\folder-64.gif" />
+                            <File name="extension\kindeditor\plugins\filemanager\images\go-up.gif" />
+                        </Folder>
+                        <File name="extension\kindeditor\plugins\filemanager\filemanager.js" />
+                    </Folder>
+                    <Folder name="flash">
+                        <File name="extension\kindeditor\plugins\flash\flash.js" />
+                    </Folder>
+                    <Folder name="image">
+                        <Folder name="images">
+                            <File name="extension\kindeditor\plugins\image\images\align_left.gif" />
+                            <File name="extension\kindeditor\plugins\image\images\align_right.gif" />
+                            <File name="extension\kindeditor\plugins\image\images\align_top.gif" />
+                            <File name="extension\kindeditor\plugins\image\images\refresh.png" />
+                        </Folder>
+                        <File name="extension\kindeditor\plugins\image\image.js" />
+                    </Folder>
+                    <Folder name="insertfile">
+                        <File name="extension\kindeditor\plugins\insertfile\insertfile.js" />
+                    </Folder>
+                    <Folder name="lineheight">
+                        <File name="extension\kindeditor\plugins\lineheight\lineheight.js" />
+                    </Folder>
+                    <Folder name="link">
+                        <File name="extension\kindeditor\plugins\link\link.js" />
+                    </Folder>
+                    <Folder name="map">
+                        <File name="extension\kindeditor\plugins\map\map.html" />
+                        <File name="extension\kindeditor\plugins\map\map.js" />
+                    </Folder>
+                    <Folder name="media">
+                        <File name="extension\kindeditor\plugins\media\media.js" />
+                    </Folder>
+                    <Folder name="multiimage">
+                        <Folder name="images">
+                            <File name="extension\kindeditor\plugins\multiimage\images\image.png" />
+                            <File name="extension\kindeditor\plugins\multiimage\images\select-files-en.png" />
+                            <File name="extension\kindeditor\plugins\multiimage\images\select-files-zh_CN.png" />
+                            <File name="extension\kindeditor\plugins\multiimage\images\swfupload.swf" />
+                        </Folder>
+                        <File name="extension\kindeditor\plugins\multiimage\multiimage.js" />
+                    </Folder>
+                    <Folder name="pagebreak">
+                        <File name="extension\kindeditor\plugins\pagebreak\pagebreak.js" />
+                    </Folder>
+                    <Folder name="plainpaste">
+                        <File name="extension\kindeditor\plugins\plainpaste\plainpaste.js" />
+                    </Folder>
+                    <Folder name="preview">
+                        <File name="extension\kindeditor\plugins\preview\preview.js" />
+                    </Folder>
+                    <Folder name="quickformat">
+                        <File name="extension\kindeditor\plugins\quickformat\quickformat.js" />
+                    </Folder>
+                    <Folder name="table">
+                        <File name="extension\kindeditor\plugins\table\table.js" />
+                    </Folder>
+                    <Folder name="template">
+                        <Folder name="html">
+                            <File name="extension\kindeditor\plugins\template\html\1.html" />
+                            <File name="extension\kindeditor\plugins\template\html\2.html" />
+                            <File name="extension\kindeditor\plugins\template\html\3.html" />
+                        </Folder>
+                        <File name="extension\kindeditor\plugins\template\template.js" />
+                    </Folder>
+                    <Folder name="wordpaste">
+                        <File name="extension\kindeditor\plugins\wordpaste\wordpaste.js" />
+                    </Folder>
+                </Folder>
+                <Folder name="themes">
+                    <Folder name="common">
+                        <File name="extension\kindeditor\themes\common\anchor.gif" />
+                        <File name="extension\kindeditor\themes\common\blank.gif" />
+                        <File name="extension\kindeditor\themes\common\flash.gif" />
+                        <File name="extension\kindeditor\themes\common\loading.gif" />
+                        <File name="extension\kindeditor\themes\common\media.gif" />
+                        <File name="extension\kindeditor\themes\common\rm.gif" />
+                    </Folder>
+                    <Folder name="default">
+                        <File name="extension\kindeditor\themes\default\background.png" />
+                        <File name="extension\kindeditor\themes\default\default.css" />
+                        <File name="extension\kindeditor\themes\default\default.png" />
+                    </Folder>
+                    <Folder name="qq">
+                        <File name="extension\kindeditor\themes\qq\editor.gif" />
+                        <File name="extension\kindeditor\themes\qq\qq.css" />
+                    </Folder>
+                    <Folder name="simple">
+                        <File name="extension\kindeditor\themes\simple\simple.css" />
+                    </Folder>
+                </Folder>
+                <File name="extension\kindeditor\kindeditor-all-min.js" />
+                <File name="extension\kindeditor\kindeditor-all.js" />
+                <File name="extension\kindeditor\kindeditor-min.js" />
+                <File name="extension\kindeditor\kindeditor.js" />
+                <File name="extension\kindeditor\license.txt" />
+            </Folder>
+        </Folder>
+        <Folder name="statics">
+            <Folder name="css">
+                <File name="statics\css\style.css" />
+            </Folder>
+            <File name="statics\1.jpg" />
+            <File name="statics\bgm.png" />
+            <File name="statics\header.png" />
+        </Folder>
+        <Folder name="system">
+            <Folder name="core">
+                <File name="system\core\Benchmark.php" />
+                <File name="system\core\CodeIgniter.php" />
+                <File name="system\core\Common.php" />
+                <File name="system\core\Config.php" />
+                <File name="system\core\Controller.php" />
+                <File name="system\core\Exceptions.php" />
+                <File name="system\core\Hooks.php" />
+                <File name="system\core\index.html" />
+                <File name="system\core\Input.php" />
+                <File name="system\core\Lang.php" />
+                <File name="system\core\Loader.php" />
+                <File name="system\core\Model.php" />
+                <File name="system\core\Output.php" />
+                <File name="system\core\Router.php" />
+                <File name="system\core\Security.php" />
+                <File name="system\core\URI.php" />
+                <File name="system\core\Utf8.php" />
+            </Folder>
+            <Folder name="database">
+                <Folder name="drivers">
+                    <Folder name="cubrid">
+                        <File name="system\database\drivers\cubrid\cubrid_driver.php" />
+                        <File name="system\database\drivers\cubrid\cubrid_forge.php" />
+                        <File name="system\database\drivers\cubrid\cubrid_result.php" />
+                        <File name="system\database\drivers\cubrid\cubrid_utility.php" />
+                        <File name="system\database\drivers\cubrid\index.html" />
+                    </Folder>
+                    <Folder name="mssql">
+                        <File name="system\database\drivers\mssql\index.html" />
+                        <File name="system\database\drivers\mssql\mssql_driver.php" />
+                        <File name="system\database\drivers\mssql\mssql_forge.php" />
+                        <File name="system\database\drivers\mssql\mssql_result.php" />
+                        <File name="system\database\drivers\mssql\mssql_utility.php" />
+                    </Folder>
+                    <Folder name="mysql">
+                        <File name="system\database\drivers\mysql\index.html" />
+                        <File name="system\database\drivers\mysql\mysql_driver.php" />
+                        <File name="system\database\drivers\mysql\mysql_forge.php" />
+                        <File name="system\database\drivers\mysql\mysql_result.php" />
+                        <File name="system\database\drivers\mysql\mysql_utility.php" />
+                    </Folder>
+                    <Folder name="mysqli">
+                        <File name="system\database\drivers\mysqli\index.html" />
+                        <File name="system\database\drivers\mysqli\mysqli_driver.php" />
+                        <File name="system\database\drivers\mysqli\mysqli_forge.php" />
+                        <File name="system\database\drivers\mysqli\mysqli_result.php" />
+                        <File name="system\database\drivers\mysqli\mysqli_utility.php" />
+                    </Folder>
+                    <Folder name="oci8">
+                        <File name="system\database\drivers\oci8\index.html" />
+                        <File name="system\database\drivers\oci8\oci8_driver.php" />
+                        <File name="system\database\drivers\oci8\oci8_forge.php" />
+                        <File name="system\database\drivers\oci8\oci8_result.php" />
+                        <File name="system\database\drivers\oci8\oci8_utility.php" />
+                    </Folder>
+                    <Folder name="odbc">
+                        <File name="system\database\drivers\odbc\index.html" />
+                        <File name="system\database\drivers\odbc\odbc_driver.php" />
+                        <File name="system\database\drivers\odbc\odbc_forge.php" />
+                        <File name="system\database\drivers\odbc\odbc_result.php" />
+                        <File name="system\database\drivers\odbc\odbc_utility.php" />
+                    </Folder>
+                    <Folder name="pdo">
+                        <File name="system\database\drivers\pdo\index.html" />
+                        <File name="system\database\drivers\pdo\pdo_driver.php" />
+                        <File name="system\database\drivers\pdo\pdo_forge.php" />
+                        <File name="system\database\drivers\pdo\pdo_result.php" />
+                        <File name="system\database\drivers\pdo\pdo_utility.php" />
+                    </Folder>
+                    <Folder name="postgre">
+                        <File name="system\database\drivers\postgre\index.html" />
+                        <File name="system\database\drivers\postgre\postgre_driver.php" />
+                        <File name="system\database\drivers\postgre\postgre_forge.php" />
+                        <File name="system\database\drivers\postgre\postgre_result.php" />
+                        <File name="system\database\drivers\postgre\postgre_utility.php" />
+                    </Folder>
+                    <Folder name="sqlite">
+                        <File name="system\database\drivers\sqlite\index.html" />
+                        <File name="system\database\drivers\sqlite\sqlite_driver.php" />
+                        <File name="system\database\drivers\sqlite\sqlite_forge.php" />
+                        <File name="system\database\drivers\sqlite\sqlite_result.php" />
+                        <File name="system\database\drivers\sqlite\sqlite_utility.php" />
+                    </Folder>
+                    <Folder name="sqlsrv">
+                        <File name="system\database\drivers\sqlsrv\index.html" />
+                        <File name="system\database\drivers\sqlsrv\sqlsrv_driver.php" />
+                        <File name="system\database\drivers\sqlsrv\sqlsrv_forge.php" />
+                        <File name="system\database\drivers\sqlsrv\sqlsrv_result.php" />
+                        <File name="system\database\drivers\sqlsrv\sqlsrv_utility.php" />
+                    </Folder>
+                    <File name="system\database\drivers\index.html" />
+                </Folder>
+                <File name="system\database\DB.php" />
+                <File name="system\database\DB_active_rec.php" />
+                <File name="system\database\DB_cache.php" />
+                <File name="system\database\DB_driver.php" />
+                <File name="system\database\DB_forge.php" />
+                <File name="system\database\DB_result.php" />
+                <File name="system\database\DB_utility.php" />
+                <File name="system\database\index.html" />
+            </Folder>
+            <Folder name="fonts">
+                <File name="system\fonts\index.html" />
+                <File name="system\fonts\texb.ttf" />
+            </Folder>
+            <Folder name="helpers">
+                <File name="system\helpers\array_helper.php" />
+                <File name="system\helpers\captcha_helper.php" />
+                <File name="system\helpers\cookie_helper.php" />
+                <File name="system\helpers\date_helper.php" />
+                <File name="system\helpers\directory_helper.php" />
+                <File name="system\helpers\download_helper.php" />
+                <File name="system\helpers\email_helper.php" />
+                <File name="system\helpers\file_helper.php" />
+                <File name="system\helpers\form_helper.php" />
+                <File name="system\helpers\html_helper.php" />
+                <File name="system\helpers\index.html" />
+                <File name="system\helpers\inflector_helper.php" />
+                <File name="system\helpers\language_helper.php" />
+                <File name="system\helpers\number_helper.php" />
+                <File name="system\helpers\path_helper.php" />
+                <File name="system\helpers\security_helper.php" />
+                <File name="system\helpers\smiley_helper.php" />
+                <File name="system\helpers\string_helper.php" />
+                <File name="system\helpers\text_helper.php" />
+                <File name="system\helpers\typography_helper.php" />
+                <File name="system\helpers\url_helper.php" />
+                <File name="system\helpers\xml_helper.php" />
+            </Folder>
+            <Folder name="language">
+                <Folder name="english">
+                    <File name="system\language\english\calendar_lang.php" />
+                    <File name="system\language\english\date_lang.php" />
+                    <File name="system\language\english\db_lang.php" />
+                    <File name="system\language\english\email_lang.php" />
+                    <File name="system\language\english\form_validation_lang.php" />
+                    <File name="system\language\english\ftp_lang.php" />
+                    <File name="system\language\english\imglib_lang.php" />
+                    <File name="system\language\english\index.html" />
+                    <File name="system\language\english\migration_lang.php" />
+                    <File name="system\language\english\number_lang.php" />
+                    <File name="system\language\english\profiler_lang.php" />
+                    <File name="system\language\english\unit_test_lang.php" />
+                    <File name="system\language\english\upload_lang.php" />
+                </Folder>
+                <File name="system\language\index.html" />
+            </Folder>
+            <Folder name="libraries">
+                <Folder name="Cache">
+                    <Folder name="drivers">
+                        <File name="system\libraries\Cache\drivers\Cache_apc.php" />
+                        <File name="system\libraries\Cache\drivers\Cache_dummy.php" />
+                        <File name="system\libraries\Cache\drivers\Cache_file.php" />
+                        <File name="system\libraries\Cache\drivers\Cache_memcached.php" />
+                    </Folder>
+                    <File name="system\libraries\Cache\Cache.php" />
+                </Folder>
+                <Folder name="javascript">
+                    <File name="system\libraries\javascript\Jquery.php" />
+                </Folder>
+                <File name="system\libraries\Calendar.php" />
+                <File name="system\libraries\Cart.php" />
+                <File name="system\libraries\Driver.php" />
+                <File name="system\libraries\Email.php" />
+                <File name="system\libraries\Encrypt.php" />
+                <File name="system\libraries\Form_validation.php" />
+                <File name="system\libraries\Ftp.php" />
+                <File name="system\libraries\Image_lib.php" />
+                <File name="system\libraries\index.html" />
+                <File name="system\libraries\Javascript.php" />
+                <File name="system\libraries\Log.php" />
+                <File name="system\libraries\Migration.php" />
+                <File name="system\libraries\Pagination.php" />
+                <File name="system\libraries\Parser.php" />
+                <File name="system\libraries\Profiler.php" />
+                <File name="system\libraries\Session.php" />
+                <File name="system\libraries\Sha1.php" />
+                <File name="system\libraries\Table.php" />
+                <File name="system\libraries\Trackback.php" />
+                <File name="system\libraries\Typography.php" />
+                <File name="system\libraries\Unit_test.php" />
+                <File name="system\libraries\Upload.php" />
+                <File name="system\libraries\User_agent.php" />
+                <File name="system\libraries\Xmlrpc.php" />
+                <File name="system\libraries\Xmlrpcs.php" />
+                <File name="system\libraries\Zip.php" />
+            </Folder>
+            <File name="system\.htaccess" />
+            <File name="system\index.html" />
+        </Folder>
+        <File name=".gitignore" />
+        <File name=".htaccess" />
+        <File name=".travis.yml" />
+        <File name="index.php" />
+        <File name="license.txt" />
+    </Project>
+</NotepadPlus>

@@ -30,7 +30,7 @@
 		</div>
 		<div style="width:480px;margin:0 auto;padding:10px;text-align:center;"><a href="<?php echo base_url();?>questionController/ask_question">Ask Question</a></div>
 	</div>
-<?php $this->load->view('footer');?>   
+   
    <script language="javascript">
 
 var index = 0;    //�ؼ����б�������

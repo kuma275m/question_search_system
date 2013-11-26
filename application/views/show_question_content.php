@@ -34,7 +34,7 @@
 		<div style="width:820px;height:40px;text-align:left;margin:0 auto;" class="divheader">
 			<div style="margin:10px;text-weight:bold;"><b><?php echo $question_title;?></b>    <font style="font-size:10px;"><?php echo $add_time;?></font></div>
 		</div>
-		<div style="width:800px; height:auto;background:#fff;padding:10px;text-align:left;margin:0 auto;border:1px solid #4d98e5;">
+		<div style="width:800px; height:auto;padding:10px;background:#fff;padding:10px;text-align:left;margin:0 auto;border:1px solid #4d98e5;">
 			<?php
 
 			echo $question_content;
@@ -50,9 +50,9 @@
 				$num = 1;
 				foreach($show_answer as $answer)
 				{
-					echo "<div style='width:800px; height:auto;background:#fff;padding:10px;text-align:left;margin:0 auto;border:1px solid #4d98e5;'>";
-					echo "<b>#".$num."&nbsp;&nbsp;&nbsp;".$answer['username']."(".$answer['add_time']."):</b><br />";
-					echo "<p style='border-bottom:1px dashed #4d98e5;'>".$answer['answer_content']."</p><br />";
+					echo "<div style='width:800px;padding:10px;height:auto;background:#fff;padding:10px;text-align:left;margin:0 auto;border:1px solid #4d98e5;'>";
+					echo "<b>#".$num."&nbsp;&nbsp;&nbsp;".$answer['username']."</b> <font style='font-size:10px;'>".$answer['add_time']."</font><br />";
+					echo "<p>".$answer['answer_content']."</p><br />";
 					$num++;
 					echo "</div>";
 				}

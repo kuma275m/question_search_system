@@ -20,7 +20,7 @@ class AnswerController extends CI_Controller {
 			$this->table_answer->insert_new_answer($question_id, $category_id, $question_answer, $user_id);
 			$this->load->model('table_user');
 			$this->table_user->update_user('update_reply_times', $user_id);
-			redirect('/questionController/show_question/?id='.$question_id.'');
+			redirect('/questionController/show_question/'.$question_id.'');
 		}
 	}
 	

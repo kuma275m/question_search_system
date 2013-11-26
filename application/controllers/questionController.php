@@ -13,16 +13,24 @@ class QuestionController extends CI_Controller {
 		$this->load->model('table_question');
 		$result['show_content'] = $this->table_question->show_question_content($question_id);
 		foreach($result['show_content'] as $row) {
+			$this->load->model('time_class');
 			$result['question_id'] = $row['id'];
 			$result['question_title'] = $row['question_title'];
 			$result['question_content'] = $row['question_content'];
 			$result['category_id'] = $row['category_id'];
-			$result['add_time'] = $row['add_time'];
+			$result['add_time'] = $this->time_class->time_trans($row['add_time']);
 		}
 		$this->load->model('table_category');
 		$result['category'] = $this->table_category->list_category();
 		$this->load->model('table_answer');
 		$result['show_answer'] = $this->table_answer->show_answer($question_id);
+		$sum = count($result['show_answer']);
+		//foreach($result['show_answer'] as $row)
+		for($i=0; $i<$sum; $i++)
+		{
+			$this->load->model('time_class');
+			$result['show_answer'][$i]['add_time'] = $this->time_class->time_trans($result['show_answer'][$i]['add_time']);
+		}
 		if(count($result['show_answer']) == 0) {
 			$result['message'] = "This question has not anwser yet. You are welcome to be the first answer.";
 		}
@@ -55,7 +63,7 @@ class QuestionController extends CI_Controller {
 				$this->table_user->update_user('update_ask_times', $user_id);
 				$id = $this->table_question->get_id($question_title);
 				$question_id = $id['id'];
-				$data['message'] = "Thank you. Your question has been posted.<br />You can view your question via <a href='".base_url()."questionController/show_question/?id=".$question_id."'>here</a>";
+				$data['message'] = "Thank you. Your question has been posted.<br />You can view your question via <a href='".base_url()."questionController/show_question/".$question_id."'>here</a>";
 				$this->load->view('message', $data);
 			}
 		}
